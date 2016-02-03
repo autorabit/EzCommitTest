@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integrations Message</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration Messages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Body --></label>
+        <name>Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>AnalysP</masterLabel>
+            <translation><!-- AnalysP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B</masterLabel>
+            <translation><!-- B2B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEC</masterLabel>
+            <translation><!-- MEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NID</masterLabel>
+            <translation><!-- NID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oblicore</masterLabel>
+            <translation><!-- Oblicore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS Gateway</masterLabel>
+            <translation><!-- SMS Gateway --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Error Status --></label>
+        <name>Error_Status__c</name>
+        <picklistValues>
+            <masterLabel>Business Error</masterLabel>
+            <translation><!-- Business Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Error</masterLabel>
+            <translation><!-- Technical Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interface Method Name --></label>
+        <name>Interface_Method_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Body --></label>
+        <name>Message_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resend Check --></label>
+        <name>Resend_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code --></label>
+        <name>Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Description --></label>
+        <name>Status_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Tracker --></label>
+        <name>Time_Tracker__c</name>
+    </fields>
+    <fields>
+        <label><!-- UID --></label>
+        <name>UID__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Resend --></label>
+        <name>Resend</name>
+    </webLinks>
+</CustomObjectTranslation>

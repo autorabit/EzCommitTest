@@ -1,0 +1,90 @@
+<apex:page standardcontroller="Quote" extensions="OrderFormController">
+<style>
+.ct{
+text-align:center;
+}
+</style>
+
+ 
+  <apex:form >
+        <apex:variable value="{!0.00}" var="total1"/>
+       
+       <apex:pageBlock title="Customer Quote" mode="edit">
+          
+            <apex:pageBlockSection title="Quote Detail" columns="1" >
+                 <apex:outputField value="{!quoteObj.accountid}"/>
+                 <apex:outputField value="{!quoteObj.name}"/>
+                 <apex:inputField value="{!orderObj.Discount__c}" />
+              
+               <!-- <apex:inputField value="{!orderObj.Quantity__c}" /> -->
+               
+            </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock >
+            <apex:pageblockSection title="Select Product List from below section" collapsible="false">
+            <apex:pageBlockTable value="{!ProductList}" var="prd"  >
+            <apex:column >
+                        <apex:facet name="header"> <apex:inputCheckbox >
+                            <apex:actionSupport event="onclick" action="{!GetSelected}" onsubmit="checkAll(this)" rerender="Selected_PBS"/>
+                            </apex:inputCheckbox>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!prd.isselected}" id="checkedone">
+                        <apex:actionSupport event="onclick" action="{!GetSelected}" rerender="Selected_PBS"/></apex:inputCheckbox>
+                    </apex:column>
+            <apex:column value="{!prd.ProductWrapObj.name}" headerClass="ct"/>
+            <apex:column value="{!prd.ProductWrapObj.Product_Code__c}" headerClass="ct"/>
+            <apex:column headerValue="Product Quantity" id="quant">
+            <apex:actionRegion >
+            <apex:inputField value="{!prd.ProductWrapObj.Quantity__c }" >
+                <apex:actionSupport event="onkeyup" reRender="total"/>
+            </apex:inputField>
+        </apex:actionRegion> 
+            </apex:column>
+           <apex:column value="{!prd.ProductWrapObj.Price__c}" id="unitprice" />
+            <apex:column headerValue="Total Price with Quantity" headerClass="ct" >
+    <apex:outputText id="total" style="width:80px;text-align:center" value="{0, number, 0.00}" >
+     <!--  value="{0, number, 0.00}"-->
+       <apex:param value="{! prd.ProductWrapObj.Quantity__c * (prd.ProductWrapObj.Price__c) }" assignTo="{!TotalValDec}" name="totalstr" />
+     </apex:outputText>
+</apex:column>
+          <!--  <apex:column value="{!prd.ProductWrapObj.Total_Price__c}"/> -->
+            </apex:pageBlockTable>
+            </apex:pageblockSection>
+             <apex:pageBlockSection Title="Selected Accounts" id="Selected_PBS" collapsible="false">
+                <apex:pageblockTable value="{!SelectedPrdcts}" var="s" >
+                    <apex:column headervalue="Product Name" value="{!s.Name}" />
+                    <apex:column headervalue="Product Quantity" value="{!s.Quantity__c }" />
+                    <apex:column headerValue="Total Price with Quantity" value="{!priceperProduct[s.id]}" id="prc" >
+                    </apex:column>
+                   
+                  
+                  </apex:pageblockTable>
+            </apex:pageBlockSection> 
+           
+            <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Total QuotePrice">
+             <apex:actionSupport event="onkeyup" action="{!grandtotal}" rerender="prc"/>
+            <apex:outputText value="{!grandtotalDec}" id="total" /> 
+            </apex:outputLabel>
+            </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+              <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!save}" value="Save" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+     <script>
+        function checkAll(cb)
+        {
+            var inputElem = document.getElementsByTagName("input");
+            for(var i=0; i<inputElem.length; i++)
+            {
+                if(inputElem[i].id.indexOf("checkedone")!=-1)
+                inputElem[i].checked = cb.checked;
+            }
+        }
+        <!--document.getElementsByClassName('t1')[0].innerHTML = '{!total1}';-->
+    </script>
+    <!-- End Default Content REMOVE THIS -->
+</apex:page>

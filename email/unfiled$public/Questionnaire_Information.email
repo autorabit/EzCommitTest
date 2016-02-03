@@ -1,0 +1,10 @@
+Hi Team,
+
+Implementation Questionnaire information is received from {!Questionnaire_Implementation__c.Company_Name__c}
+
+Email id : {!Questionnaire_Implementation__c.Email__c}
+
+Go to : {!Questionnaire_Implementation__c.Link} for more details
+
+Thanks
+AutoRABIT Support

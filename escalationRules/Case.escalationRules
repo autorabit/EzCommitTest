@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>case escalation</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <criteriaItems>
+                <field>Case.IsEscalated</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Escalated</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.A_RBT__SLA__c</field>
+                <operation>equals</operation>
+                <value>Gold</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>CaseQueue</assignedTo>
+                <assignedToTemplate>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</assignedToTemplate>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>120</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyTo>bhargavi.v@autorabit.com.devsb</notifyTo>
+                <notifyToTemplate>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

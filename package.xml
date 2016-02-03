@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AccountDatatabl</members>
+        <members>AccountPage</members>
+        <members>AccountREceivablespage</members>
+        <members>AllObjDynamicDisplayClass</members>
+        <members>ChangePasswordController</members>
+        <members>CreatingAccount</members>
+        <members>FindNearby</members>
+        <members>FindNearbyExt</members>
+        <members>OppsController</members>
+        <members>QuestionaireImplementationController</members>
+        <members>QuickOrderController</members>
+        <members>WarehouseDataInstall</members>
+        <members>testFindNearby</members>
+        <members>testQuickOrderController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CheckboxComponent</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>Account_Location</members>
+        <members>FindNearbyWarehousesPage</members>
+        <members>Order_form</members>
+        <members>QuestionnaireImplementation</members>
+        <members>QuickOrderPage</members>
+        <members>ThankYouPage</members>
+        <members>WarehouseDataInstall</members>
+        <members>csspage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>QuestionnaireUpdate</members>
+        <members>countAttachments</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>AppSwitcher</members>
+        <members>Salesforce1</members>
+        <name>AppMenu</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>Test</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Naveen_s_Twitter_login</members>
+        <name>AuthProvider</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>Warehouse</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AccountContactRole</members>
+        <members>Activity</members>
+        <members>Asset</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>CaseContactRole</members>
+        <members>Contact</members>
+        <members>ContentVersion</members>
+        <members>Contract</members>
+        <members>ContractContactRole</members>
+        <members>Customer_Satisfaction_Survey__c</members>
+        <members>Customer_Survey__c</members>
+        <members>Delivery__c</members>
+        <members>Distributor__c</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>Event</members>
+        <members>FS_Market_ID__c</members>
+        <members>FeedItem</members>
+        <members>Idea</members>
+        <members>Integrations_Message__c</members>
+        <members>Invoice__c</members>
+        <members>Lead</members>
+        <members>Line_Item__c</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>MarketAccountTeamJunction__c</members>
+        <members>Merchandise__c</members>
+        <members>OM_Product__c</members>
+        <members>OM_SalesOrder__c</members>
+        <members>Opportunity</members>
+        <members>OpportunityCompetitor</members>
+        <members>OpportunityContactRole</members>
+        <members>OpportunityLineItem</members>
+        <members>Order__c</members>
+        <members>PartnerRole</members>
+        <members>Pricebook2</members>
+        <members>PricebookEntry</members>
+        <members>Product2</members>
+        <members>Questionnaire_Implementation__c</members>
+        <members>Quote</members>
+        <members>QuoteLineItem</members>
+        <members>Quote_Line_Item__c</members>
+        <members>Quote__c</members>
+        <members>Region_Analitics__c</members>
+        <members>RequestForStock__c</members>
+        <members>Site</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>TariffPlan__c</members>
+        <members>Task</members>
+        <members>User</members>
+        <members>UserProvisioningRequest</members>
+        <members>Warehouse__c</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkThanks</members>
+        <members>ZipcodeLst__c</members>
+        <members>product__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>A_RBT__Scope_Poc_Information__c-en_US</members>
+        <members>Account_Settings__mdt-en_US</members>
+        <members>Customer_Satisfaction_Survey__c-en_US</members>
+        <members>Customer_Survey__c-en_US</members>
+        <members>Delivery__c-en_US</members>
+        <members>Distributor__c-en_US</members>
+        <members>FS_Market_ID__c-en_US</members>
+        <members>Integrations_Message__c-en_US</members>
+        <members>Internal__kav-en_US</members>
+        <members>Invoice__c-en_US</members>
+        <members>Line_Item__c-en_US</members>
+        <members>MarketAccountTeamJunction__c-en_US</members>
+        <members>Merchandise__c-en_US</members>
+        <members>OM_Product__c-en_US</members>
+        <members>OM_SalesOrder__c-en_US</members>
+        <members>Order__c-en_US</members>
+        <members>Questionnaire_Implementation__c-en_US</members>
+        <members>Quote_Line_Item__c-en_US</members>
+        <members>Quote__c-en_US</members>
+        <members>Region_Analitics__c-en_US</members>
+        <members>Region__c-en_US</members>
+        <members>RequestForStock__c-en_US</members>
+        <members>SalesExecutive__c-en_US</members>
+        <members>Search_Test__c-en_US</members>
+        <members>TariffPlan__c-en_US</members>
+        <members>Warehouse__c-en_US</members>
+        <members>ZipcodeLst__c-en_US</members>
+        <members>product__c-en_US</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>Implementation</members>
+        <name>CustomSite</name>
+    </types>
+    <types>
+        <members>Customer_Satisfaction_Survey__c</members>
+        <members>Data</members>
+        <members>Delivery__c</members>
+        <members>Integrations_Message__c</members>
+        <members>Invoice__c</members>
+        <members>Merchandise__c</members>
+        <members>Survey_Customers</members>
+        <members>Warehouse__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>unfiled$public/CustomerPortalNewUserEmail</members>
+        <members>unfiled$public/First_Week_of_Trial</members>
+        <members>unfiled$public/New_Case_Assignment_Notification</members>
+        <members>unfiled$public/Questionnaire_Information</members>
+        <members>unfiled$public/Trial_Period_Ended</members>
+        <members>unfiled$public/Trial_Period_Last_Week</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>EscalationRules</name>
+    </types>
+    <types>
+        <members>Survey_Customers</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Survey_Customers</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>A_RBT</members>
+        <name>InstalledPackage</name>
+    </types>
+    <types>
+        <members>Account-Warehouse Schema Account Layout</members>
+        <members>Case-Case Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>Customer_Satisfaction_Survey__c-Customer Satisfaction Survey Layout</members>
+        <members>Customer_Survey__c-Customer Survey Layout</members>
+        <members>Delivery__c-Delivery Layout</members>
+        <members>FS_Market_ID__c-Market ID Layout</members>
+        <members>Integrations_Message__c-Integrations Message Layout</members>
+        <members>Invoice__c-Invoice Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>Lead-LeadPagelayoutTest</members>
+        <members>Line_Item__c-Line Item Layout</members>
+        <members>MarketAccountTeamJunction__c-MarketAccountTeamJunction Layout</members>
+        <members>Merchandise__c-Merchandise Layout</members>
+        <members>OM_Product__c-OM_Product Layout</members>
+        <members>OM_SalesOrder__c-OM_SalesOrder Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>Questionnaire_Implementation__c-Lead Questionnaire Layout</members>
+        <members>Questionnaire_Implementation__c-Questionnaire Implementation Layout</members>
+        <members>Quote-Quote Layout</members>
+        <members>QuoteLineItem-Quote Line Item Layout</members>
+        <members>TariffPlan__c-NorthIndia Layout</members>
+        <members>TariffPlan__c-SouthIndiaLayout</members>
+        <members>TariffPlan__c-TariffPlan Layout</members>
+        <members>Warehouse__c-Warehouse Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Testers</members>
+        <name>ManagedTopics</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Contact</members>
+        <members>Lead</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>Testers</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>Autorabit_Permission_Set</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>AutoRABIT1</members>
+        <name>PlatformCachePartition</name>
+    </types>
+    <types>
+        <members>Customer Portal</members>
+        <name>Portal</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>AutoRABITProfile</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>Chatter Only User</members>
+        <members>Content Only User</members>
+        <members>ContractManager</members>
+        <members>CustomContrctManager</members>
+        <members>CustomMarketing Profile</members>
+        <members>Customer Community Login User</members>
+        <members>Customer Community User</members>
+        <members>Customer Portal Manager Custom</members>
+        <members>Customer Portal Manager Standard</members>
+        <members>CustomerManager</members>
+        <members>CustomerUser</members>
+        <members>Force%2Ecom - One App User</members>
+        <members>Gold Partner User</members>
+        <members>Guest License User</members>
+        <members>High Volume Customer Portal User</members>
+        <members>Implementation Profile</members>
+        <members>MarketingProfile</members>
+        <members>Partner Community Login User</members>
+        <members>ReadOnly</members>
+        <members>Siteforce Only User</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>StandardAul</members>
+        <members>Support Portal Profile</members>
+        <members>System Admin</members>
+        <members>Testers Profile</members>
+        <members>Work%2Ecom Only User</members>
+        <members>questionnaireImplementation Profile</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>test</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Case.SendEmail</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Asset</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>Contact</members>
+        <members>Customer_Satisfaction_Survey__c</members>
+        <members>Customer_Survey__c</members>
+        <members>Delivery__c</members>
+        <members>FS_Market_ID__c</members>
+        <members>Integrations_Message__c</members>
+        <members>Invoice__c</members>
+        <members>Lead</members>
+        <members>MarketAccountTeamJunction__c</members>
+        <members>OM_Product__c</members>
+        <members>Opportunity</members>
+        <members>Questionnaire_Implementation__c</members>
+        <members>Quote_Line_Item__c</members>
+        <members>Quote__c</members>
+        <members>Region_Analitics__c</members>
+        <members>User</members>
+        <members>Warehouse__c</members>
+        <members>ZipcodeLst__c</members>
+        <members>product__c</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>AutorabitLogo</members>
+        <members>Mobile_Design_Templates</members>
+        <members>NoDeploymentLogo</members>
+        <members>questionnaireStyles</members>
+        <members>styles</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Asset</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>Contact</members>
+        <members>Contract</members>
+        <members>Customer_Satisfaction_Survey__c</members>
+        <members>Customer_Survey__c</members>
+        <members>Delivery__c</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>EmailMessage</members>
+        <members>Event</members>
+        <members>FS_Market_ID__c</members>
+        <members>FeedItem</members>
+        <members>Idea</members>
+        <members>Integrations_Message__c</members>
+        <members>Invoice__c</members>
+        <members>Lead</members>
+        <members>Line_Item__c</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>MarketAccountTeamJunction__c</members>
+        <members>Merchandise__c</members>
+        <members>OM_Product__c</members>
+        <members>OM_SalesOrder__c</members>
+        <members>Opportunity</members>
+        <members>OpportunityLineItem</members>
+        <members>Order__c</members>
+        <members>Organization</members>
+        <members>Product2</members>
+        <members>Questionnaire_Implementation__c</members>
+        <members>Quote</members>
+        <members>QuoteLineItem</members>
+        <members>Quote_Line_Item__c</members>
+        <members>Quote__c</members>
+        <members>Region_Analitics__c</members>
+        <members>Site</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Task</members>
+        <members>User</members>
+        <members>UserLicense</members>
+        <members>UserProvisioningRequest</members>
+        <members>Warehouse__c</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkThanks</members>
+        <members>ZipcodeLst__c</members>
+        <members>product__c</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Case</members>
+        <members>ChatterAnswers</members>
+        <members>Company</members>
+        <members>Contract</members>
+        <members>Entitlement</members>
+        <members>Ideas</members>
+        <members>LeadConvert</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>PathAssistant</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>Security</members>
+        <name>Settings</name>
+    </types>
+    <version>35.0</version>
+</Package>
