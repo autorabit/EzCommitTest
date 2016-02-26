@@ -1,0 +1,19 @@
+<!-- This is the page to Mass update industry on Accounts-->
+<!--New change as part of 11435-->
+<apex:page standardController="Account" recordSetVar="accounts" tabstyle="account" sidebar="false" showHeader="true">
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+</apex:pageBlockButtons>
+<!--Page Block Table section begins here --->
+<apex:pageBlockTable value="{!accounts}" var="a">
+<apex:column value="{!a.name}"/>
+<apex:column headerValue="Industry">
+<apex:inputField value="{!a.Industry}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

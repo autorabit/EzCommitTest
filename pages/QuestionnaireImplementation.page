@@ -1,0 +1,144 @@
+<!--
+Description: This page is created for Implementation Questionnaire.This page is used in force.com Site.
+Author : Bhargavi Vadlamani
+Last Modified : 10/28/2015
+Apex Controller : QuestionaireImplementationController  --->
+<!--------------------Page Started ------------------------------------------->
+<apex:page controller="QuestionaireImplementationController" sidebar="false" showHeader="false" wizard="true" applyBodyTag="false" standardStylesheets="false" docType="HTML-5.0">
+
+     <style>
+    .locationError { color: blue; font-weight: strong;}
+    .employeeError { color: green; font-weight: strong;}
+    </style>
+    <apex:stylesheet value="{!$Resource.questionnaireStyles}" />
+
+    <div class="header">
+        <img align="left" src="{!$Resource.AutorabitLogo}">
+        </img>
+    </div>
+    <img align="right" src="{!$Resource.NoDeploymentLogo}" width="80">
+    </img>
+
+    <br/>
+    <!--<apex:pagemessages ></apex:pagemessages> -->
+    <apex:form styleClass="form-style">
+        <h5>AutoRABIT Implementation Questionnaire</h5>
+        <table>
+        
+            <tr>
+                <td style="white-space: pre;">
+                    <apex:outputLabel value="Company name: " for="quesObj__comp"></apex:outputLabel>
+                    <apex:outputPanel >
+                        <apex:inputText value="{!companyName}" id="quesObj__comp" style="width:50%;height:70%;" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td style="white-space: pre;">
+                    <apex:outputLabel value="Email Address:  " for="quesObj__email"></apex:outputLabel>
+                    <apex:outputPanel >
+                        <apex:inputText value="{!Emailval}" id="quesObj__email" style="width:50%;;height:70%;" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td style="white-space: pre;">
+                    <apex:outputLabel value="The duration of your typical release " for="quesObj__name" />
+
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="50" html-placeholder="Please enter some info..." styleClass="textarea" value="{!releaseDuration}" id="quesObj__name" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="The environments and the Sandboxes that are part of the release.<br/>(A quick flow /PPT/list of environments can also help)" for="quesObj__site" />
+
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!noOfSandbox}" id="quesObj__site" />
+                    </apex:outputPanel>
+                    <apex:inputfile value="{!attach.body}" filename="{!attach.name}"></apex:inputfile>
+                    <!--<apex:inputFile value="{!attach.name}" id="fileName" /> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="Number and Size of the Sandboxes that you will use in trial period<br/>(Typically, the number of metadata components/size of package, Data load size and frequency)  " for="quesObj__type" />
+
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!sizeOfSandbox}" id="quesObj__type" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" styleClass="textheader" value="List of Users and roles participating in the release process.<br/>(Please provide uniform  corporate e-mail Ids for license activation)" for="quesObj__number" />
+
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!deploymentUser}" id="quesObj__number" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="Is Version Control part of the development process? Please add more details on the usage of Version Control Tool.<br/>(If you are not using it now - is it part of your immediate or long term goal?)" for="quesObj__VC" />
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!currentversionControl}" id="quesObj__VC" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel value="Time and the effort involved in the present Deployment process across multiple enviroments." for="quesObj__TE" />
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!hoursEffort}" id="quesObj__TE" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="Do you have Test Automation in-place for the application testing?<br/>(If yes, please provide the tools involved and the time taken to automate a test scenario at present time)" for="quesObj__UR" />
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!testAutomation}" id="quesObj__UR" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="List any ALM tools that are part of your current release management process which you look to integrate with AutoRABIT for reporting?" for="quesObj__ALM" />
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!almTools}" id="quesObj__ALM" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="Briefly outline 2-3 major short term goals you would like to achieve with the release management process" for="quesObj__SM" />
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!almTools}" id="quesObj__SM" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="Briefly outline your Long term goals for the release management process" for="quesObj__LM" />
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea rows="4" cols="20" html-placeholder="Please enter some info..." styleClass="textarea" value="{!almTools}" id="quesObj__LM" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputLabel escape="false" value="Do you wish to use the Data Loader functionality available in AutoRABIT for trial period?" for="quesObj__DL" />
+                    <apex:outputPanel layout="block">
+                        <apex:inputTextarea html-placeholder="Please enter some info..." styleClass="textarea" value="{!almTools}" id="quesObj__DL" />
+                    </apex:outputPanel>
+                </td>
+            </tr>
+
+        </table>
+        <apex:commandButton action="{!save}" value="Submit Form" id="theButton" styleClass="myButton" />
+           <apex:message for="quesObj__email" styleClass="locationError" />
+    </apex:form>
+
+</apex:page>

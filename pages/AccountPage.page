@@ -1,0 +1,8 @@
+<apex:page showheader="false" sidebar="false" standardController="Account">
+<apex:form >
+
+<apex:inputText value="{!Account.name}"/>
+<apex:inputText value="{!account.description}"/>
+</apex:form>
+  
+</apex:page>
