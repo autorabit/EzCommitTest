@@ -45,6 +45,7 @@
     </types>
     <types>
         <members>TestLabel</members>
+        <members>UnpackagedLabel</members>
         <name>CustomLabel</name>
     </types>
 </Package>
