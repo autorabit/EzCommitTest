@@ -43,4 +43,8 @@
         <members>Integrations_Message__c.Error_Status__c</members>
         <name>CustomField</name>
     </types>
+    <types>
+        <members>TestLabel</members>
+        <name>CustomLabel</name>
+    </types>
 </Package>
