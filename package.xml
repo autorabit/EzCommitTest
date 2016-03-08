@@ -35,6 +35,7 @@
     <types>
         <members>Account.Contactnew__c</members>
         <members>Case.Problem_Type__c</members>
+        <members>Customer_Survey__c.TestField__c</members>
         <members>Distributor__c.City__c</members>
         <members>FS_Market_ID__c.FS_KO_ID__c</members>
         <members>FS_Market_ID__c.FS_Market_ID_Value__c</members>

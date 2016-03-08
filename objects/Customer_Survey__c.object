@@ -63,4 +63,14 @@
     <pluralLabel>survey</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>TestField__c</fullName>
+        <externalId>false</externalId>
+        <label>TestField</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
 </CustomObject>
