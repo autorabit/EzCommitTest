@@ -49,4 +49,8 @@
         <members>UnpackagedLabel</members>
         <name>CustomLabel</name>
     </types>
+    <types>
+        <members>Customer_Survey__c</members>
+        <name>CustomObject</name>
+    </types>
 </Package>
